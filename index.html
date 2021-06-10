@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Js AnitaB Cat</title>
+</head>
+
+<body>
+
+    <div id="quiz">
+        <form>
+            <label for="name">What is your name?</label><br>
+            <input type="text" id="name" name="name"><br>
+            <label for="yourClass">What class are you in?</label><br>
+            <input type="text" id="yourClass" name="yourClass"><br>
+            <label for="subject">What subject do you like?:</label><br>
+            <input type="text" id="subject" name="subject"><br>
+            <label for="date">What date will you graduate?</label><br>
+            <input type="date" id="date" name="date"><br>
+            <button id="button" onclick="getAnswers">Submit </button>
+        </form>
+    </div>
+    <script>
+        function getAnswers() {
+            var name = document.getElementById(" name ").value;
+            var yourClass = document.getElementById("yourClass ").value;
+            var subject = document.getElementById("subject ").value;
+            var date = document.getElementById("date ").value;
+            if (company === " " || phone === " " || location === " " || date === " ") {
+                alert(`You have to answer all the questions`)
+            } else {
+                alert(`Your name is ${name} from ${yourClass} class and you will be graduating on ${date}`)
+
+            }
+        }
+    </script>
+
+</body>
+
+</html>
